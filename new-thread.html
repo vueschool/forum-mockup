@@ -1,0 +1,100 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+    <title>Cooking Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <header class="header" id="header">
+
+        <a href="index.html" class="logo">
+            <img src="assets/img/svg/vueschool-logo.svg" >
+        </a>
+
+        <div class="btn-hamburger">
+            <!-- use .btn-humburger-active to open the menu -->
+            <div class="top bar"></div>
+            <div class="middle bar"></div>
+            <div class="bottom bar"></div>
+        </div>
+
+    <!-- use .navbar-open to open nav -->
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="category.html">Category</a>
+            </li>
+            <li class="navbar-item">
+                <a href="forum.html">Forum</a>
+            </li>
+            <li class="navbar-item">
+                <a href="thread.html">Thread</a>
+            </li>
+            <!-- Show these option only on mobile-->
+            <li class="navbar-item mobile-only">
+                <a href="profile.html">My Profile</a>
+            </li>
+            <li class="navbar-item mobile-only">
+                <a href="#">Logout</a>
+            </li>
+
+            <li class="navbar-user">
+                <a href="#">
+                    <img class="avatar-small" src="https://pbs.twimg.com/profile_images/881260299420041217/GMVGlDea_400x400.jpg" alt="">
+                    <span>
+                        Alex Kyriakidis
+                        <img class="icon-profile" src="assets/img/svg/arrow-profile.svg" alt="">
+                    </span>
+                </a>
+
+                <!-- dropdown menu -->
+                <!-- add class "active-drop" to show the dropdown -->
+                <div id="user-dropdown">
+                    <div class="triangle-drop"></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="profile.html">View profile</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+
+      <div class="col-full push-top">
+
+          <h1>Create new thread in <i>Cooking</i></h1>
+
+          <form action="">
+              <div class="form-group">
+                <label for="thread_title">Title:</label>
+                <input type="text" id="thread_title" class="form-input" name="title" >
+              </div>
+
+              <div class="form-group">
+                <label for="thread_content">Content:</label>
+                <textarea id="thread_content" class="form-input" name="content" rows="8" cols="140"></textarea>
+              </div>
+
+              <div class="btn-group">
+                <button class="btn btn-ghost">Cancel</button>
+                <button class="btn btn-blue" type="submit" name="Publish">Publish </button>
+              </div>
+          </form>
+      </div>
+
+  </div>
+
+</body>
+</html>

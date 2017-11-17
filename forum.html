@@ -1,0 +1,267 @@
+<html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cooking Forum</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+  <header class="header" id="header">
+
+        <a href="index.html" class="logo">
+            <img src="assets/img/svg/vueschool-logo.svg" >
+        </a>
+
+        <div class="btn-hamburger">
+            <!-- use .btn-humburger-active to open the menu -->
+            <div class="top bar"></div>
+            <div class="middle bar"></div>
+            <div class="bottom bar"></div>
+        </div>
+
+    <!-- use .navbar-open to open nav -->
+    <nav class="navbar">
+        <ul>
+            <li class="navbar-item">
+                <a href="index.html">Home</a>
+            </li>
+            <li class="navbar-item">
+                <a href="category.html">Category</a>
+            </li>
+            <li class="navbar-item">
+                <a href="forum.html">Forum</a>
+            </li>
+            <li class="navbar-item">
+                <a href="thread.html">Thread</a>
+            </li>
+            <!-- Show these option only on mobile-->
+            <li class="navbar-item mobile-only">
+                <a href="profile.html">My Profile</a>
+            </li>
+            <li class="navbar-item mobile-only">
+                <a href="#">Logout</a>
+            </li>
+
+            <li class="navbar-user">
+                <a href="#">
+                    <img class="avatar-small" src="https://pbs.twimg.com/profile_images/881260299420041217/GMVGlDea_400x400.jpg" alt="">
+                    <span>
+                        Alex Kyriakidis
+                        <img class="icon-profile" src="assets/img/svg/arrow-profile.svg" alt="">
+                    </span>
+                </a>
+
+                <!-- dropdown menu -->
+                <!-- add class "active-drop" to show the dropdown -->
+                <div id="user-dropdown">
+                    <div class="triangle-drop"></div>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-menu-item"><a href="profile.html">View profile</a></li>
+                        <li class="dropdown-menu-item"><a href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+      <div class="col-full push-top">
+          <ul class="breadcrumbs">
+              <li><a href="/index.html"><i class="fa fa-home fa-btn"></i>Home</a></li>
+              <li><a href="/category.html">Discussions</a></li>
+              <li class="active"><a href="#">Cooking</a></li>
+          </ul>
+
+          <div class="forum-header">
+              <div class="forum-details">
+                  <h1>Cooking</h1>
+                  <p class="text-lead">Discuss your passion for food and cooking</p>
+              </div>
+              <a href="new-thread.html" class="btn-green btn-small">Start a thread</a>
+          </div>
+      </div>
+
+      <div class="col-full">
+            <div class="category-item">
+                <div class="forum-list">
+                    <h2 class="list-title">Recipes</h2>
+
+                    <div class="forum-listing">
+                        <div class="forum-details">
+                            <a href="#" class="forum-name">Recipes</a>
+
+                            <p class="forum-description ">Recipes, Guides and Tips & Tricks</p>
+                        </div>
+
+
+                        <div class="threads-count">
+                            <p class="count text-lead">1</p> threads
+                        </div>
+
+                        <div class="last-thread">
+                            <img class="avatar" src="http://cleaneatsfastfeets.com/wp-content/uploads/2013/05/Mr-Burns.gif" alt="">
+                            <div class="last-thread-details">
+                                <a href="#">How I grill my fish</a>
+                                <p class="text-xsmall">By <a href="profile.html">Charles Montgomery Burns</a>, 2 days ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="col-full">
+
+          <div class="thread-list">
+
+              <h2 class="list-title">Threads</h2>
+
+              <div class="thread">
+                  <div>
+                      <p>
+                          <a href="thread.html">How can I chop onions without crying?</a>
+                      </p>
+                      <p class="text-faded text-xsmall">
+                          By <a href="profile.html">Joseph Kerr</a>, yesterday.
+                      </p>
+                  </div>
+
+                  <div class="activity">
+                      <p class="replies-count">
+                          1 reply
+                      </p>
+
+                      <img class="avatar-medium"
+                           src="http://i0.kym-cdn.com/photos/images/facebook/000/010/934/46623-batman_pikachu_super.png"
+                           alt="">
+
+                      <div>
+                          <p class="text-xsmall">
+                              <a href="profile.html">Bruce Wayne</a>
+                          </p>
+                          <p class="text-xsmall text-faded">2 hours ago</p>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="thread">
+                  <div>
+                      <p>
+                          <a href="thread.html">Wasabi vs horseraddish?</a>
+                      </p>
+                      <p class="text-faded text-xsmall">By <a href="profile.html">Robin</a>, 8 hours ago</p>
+                  </div>
+
+                  <div class="activity">
+                      <p class="replies-count">
+                          3 replies
+                      </p>
+
+                      <img class="avatar-medium"
+                           src="https://firebasestorage.googleapis.com/v0/b/forum-2a982.appspot.com/o/images%2Favatars%2Fraynathan?alt=media&token=bd9a0f0e-60f2-4e60-b092-77d1ded50a7e"
+                           alt="">
+                      <span>
+                          <a class="text-xsmall" href="profile.html">Ray-Nathan James</a>
+                          <p class="text-faded text-xsmall">3 hours ago</p>
+                      </span>
+                  </div>
+              </div>
+
+              <div class="thread">
+                  <div>
+                      <p>
+                          <a href="thread.html">Multifilling</a>
+                      </p>
+                      <p class="text-faded text-xsmall">By <a href="profile.html">Ray-Nathan James</a>, 6 days ago</p>
+                  </div>
+
+                  <div class="activity">
+                      <p class="replies-count">
+                          1 reply
+                      </p>
+
+                      <img class="avatar-medium"
+                           src="http://i0.kym-cdn.com/photos/images/facebook/000/010/934/46623-batman_pikachu_super.png"
+                           alt="">
+                      <span>
+                          <a class="text-xsmall" href="profile.html">Bruce Wayne</a>
+                          <p class="text-faded text-xsmall">6 days ago</p>
+                      </span>
+                  </div>
+              </div>
+
+              <div class="thread">
+                  <div>
+                      <p>
+                          <a href="thread.html">Egg replacer for bread dough?</a>
+                      </p>
+                      <p class="text-faded text-xsmall">By <a href="profile.html">Theodor Jackson</a>, 2 weeks ago</p>
+                  </div>
+
+                  <div class="activity">
+                      <p class="replies-count">
+                          1 reply
+                      </p>
+
+                      <img class="avatar-medium"
+                           src="http://icons.iconarchive.com/icons/designbolts/free-male-avatars/128/Male-Avatar-icon.png"
+                           alt="">
+                      <span>
+                          <a class="text-xsmall" href="profile.html">Theodor Jackson</a>
+                          <p class="text-faded text-xsmall">2 weeks ago</p>
+                      </span>
+                  </div>
+              </div>
+
+              <div class="thread">
+                  <div>
+                      <p>
+                          <a href="thread.html">Which is your favorite carbohydrate? 🤓</a>
+                      </p>
+                      <p class="text-faded text-xsmall">By <a href="profile.html">Ray-Nathan James</a>, 1 month ago</p>
+                  </div>
+
+                  <div class="activity">
+                      <p class="replies-count">
+                          0 replies
+                      </p>
+
+                      <img class="avatar-medium"
+                           src="http://i0.kym-cdn.com/photos/images/facebook/000/010/934/46623-batman_pikachu_super.png"
+                           alt="">
+                      <span>
+                          <a class="text-xsmall" href="profile.html">Ray-Nathan James</a>
+                          <p class="text-faded text-xsmall">1 month ago</p>
+                      </span>
+                  </div>
+              </div>
+
+          </div>
+
+          <div class="pagination">
+              <button class="btn-circle" disabled><i class="fa fa-angle-left"></i></button>
+              1 of 3
+              <button class="btn-circle"><i class="fa fa-angle-right"></i></button>
+          </div>
+      </div>
+
+  </div>
+
+  <div class="forum-stats desktop-only">
+      <hr>
+      <ul>
+        <li><i class="fa fa-user-circle-o"></i>47 users online</li>
+        <li><i class="fa fa-user-o"></i>497 users registered</li>
+        <li><i class="fa fa-comments-o"></i>49 threads</li>
+        <li><i class="fa fa-comment-o"></i>763 posts</li>
+      </ul>
+  </div>
+
+</body>
+</html>
