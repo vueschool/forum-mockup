@@ -48,27 +48,18 @@
             </li>
         </ul>
 
-        <ul>
-
-            <li class="navbar-user">
-                <a href="#">
-                    <img class="avatar-small" src="https://pbs.twimg.com/profile_images/881260299420041217/GMVGlDea_400x400.jpg" alt="">
-                    <span>
-                        Alex Kyriakidis
-                        <img class="icon-profile" src="assets/img/svg/arrow-profile.svg" alt="">
-                    </span>
-                </a>
-
-                <!-- dropdown menu -->
-                <!-- add class "active-drop" to show the dropdown -->
-                <div id="user-dropdown">
-                    <div class="triangle-drop"></div>
-                    <ul class="dropdown-menu">
-                        <li class="dropdown-menu-item"><a href="profile.html">View profile</a></li>
-                        <li class="dropdown-menu-item"><a href="#">Log out</a></li>
-                    </ul>
-                </div>
+        <ul v-if=" ! authenticated">
+            <li class="navbar-item">
+                <a href="">Register</a>
             </li>
+
+            <li class="navbar-item">
+                <a href="#">Login</a>
+            </li>
+        </ul>
+
+        <ul v-else>
+            ...
         </ul>
     </nav>
   </header>
