@@ -2236,12 +2236,12 @@ body {
 body a {
     color: #57AD8D;
     text-decoration: none;
-    transition: all .6s ease;
 }
 
 body a:hover {
     color: #41826a;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 h1, h2, h3, h4, h5 {
