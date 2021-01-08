@@ -764,13 +764,6 @@ span.online::before {
 
 .logo {
     float: left;
-    padding-top: 5px;
-}
-
-@media (min-width: 240px) and (max-width: 720px) {
-    .logo {
-        padding-top: 10px;
-    }
 }
 
 .svg-logo {
@@ -938,7 +931,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    /*height: 100%;*/
 }
 
 .navbar-item, .navbar-mobile-item {
@@ -955,7 +948,6 @@ ul .navbar-item:last-child, ul .navbar-mobile-item:last-child {
     color: white;
     padding: 10px 20px;
     text-decoration: none;
-    transition: all .6s ease;
     font-size: 18px;
 }
 
@@ -967,6 +959,7 @@ ul .navbar-item:last-child, ul .navbar-mobile-item:last-child {
 
 .navbar-item a:hover, .navbar-mobile-item a:hover {
     color: #57AD8D;
+    transition: all .3s ease;
 }
 
 .navbar-item a:active, .navbar-mobile-item a:active {
@@ -1454,6 +1447,9 @@ button {
     border: none;
     display: inline-block;
     outline: 0;
+}
+
+.btn:hover, .btn-blue:hover, .btn-blue-outlined:hover, .btn-brown:hover, .btn-brown-outlined:hover, .btn-green:hover, .btn-green-outlined:hover, .btn-red:hover, .btn-red-outlined:hover, .btn-ghost:hover {
     transition: all 0.4s ease;
 }
 
@@ -1497,7 +1493,6 @@ button {
     width: 60px;
     background: #C82543;
     border-radius: 50%;
-    transition: all ease 0.4s;
     padding: 0px;
     font-size: 36px;
     display: flex;
@@ -1508,6 +1503,7 @@ button {
 
 .btn-circle:hover {
     background: #b4213c;
+    transition: all ease 0.4s;
 }
 
 .btn-circle:hover .icon-arrow-up {
@@ -2532,10 +2528,6 @@ section {
 
 .faded, .btn:disabled, .btn-blue:disabled, .btn-blue-outlined:disabled, .btn-brown:disabled, .btn-brown-outlined:disabled, .btn-green:disabled, .btn-green-outlined:disabled, .btn-red:disabled, .btn-red-outlined:disabled, .btn-ghost:disabled, .btn-disabled, a > img:hover {
     opacity: 0.8;
-}
-
-a > img {
-    transition: all .6s ease;
 }
 
 hr {
